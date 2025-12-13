@@ -1,0 +1,6 @@
+go mod init cod3r -> criar pasta modulos que tem dependências do projeto
+go vet comandos.go -> identificar problemas
+go build comandos.go -> cria um executável do arquivo
+go run comandos.go -> compila e executa o programa em um único comando.
+go get -u github.com/go-sql-driver/mysql -> instala o mysql
+go get github.com/lib/pq
