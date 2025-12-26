@@ -36,7 +36,7 @@ func UsuarioHandler(w http.ResponseWriter, r *http.Request) {
 func usuarioPorID(w http.ResponseWriter, r *http.Request, id int) {
 	ctx := context.Background()
 
-	conn, err := pgx.Connect(ctx, "postgres://postgres:root@localhost:5432/curso")
+	conn, err := pgx.Connect(ctx, "postgres://postgres:senha@localhost:5432/curso")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -54,7 +54,7 @@ func usuarioPorID(w http.ResponseWriter, r *http.Request, id int) {
 func usuarioTodos(w http.ResponseWriter, r *http.Request, id int) {
 	ctx := context.Background()
 
-	conn, err := pgx.Connect(ctx, "postgres://postgres:root@localhost:5432/curso")
+	conn, err := pgx.Connect(ctx, "postgres://postgres:senha@localhost:5432/curso")
 	if err != nil {
 		log.Fatal(err)
 	}

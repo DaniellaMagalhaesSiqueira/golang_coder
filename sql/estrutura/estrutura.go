@@ -33,7 +33,7 @@ func main() {
 
 	// Conecta no banco padrão "postgres"
 	conn, err := pgx.Connect(ctx,
-		"postgres://postgres:root@localhost:5432/postgres")
+		"postgres://postgres:senha@localhost:5432/postgres")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -67,7 +67,7 @@ func main() {
 
 	conn.Close(ctx)
 	appConn, err := pgx.Connect(ctx,
-		"postgres://postgres:root@localhost:5432/"+dbName)
+		"postgres://postgres:senha@localhost:5432/"+dbName)
 	if err != nil {
 		log.Fatal(err)
 	}

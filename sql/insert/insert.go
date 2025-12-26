@@ -13,7 +13,7 @@ func main() {
 	ctx := context.Background()
 
 	conn, err := pgx.Connect(ctx,
-		"postgres://postgres:root@localhost:5432/curso")
+		"postgres://postgres:senha@localhost:5432/curso")
 
 	if err != nil {
 		// log.Fatal(err)
