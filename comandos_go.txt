@@ -4,3 +4,10 @@ go build comandos.go -> cria um executável do arquivo
 go run comandos.go -> compila e executa o programa em um único comando.
 go get -u github.com/go-sql-driver/mysql -> instala o mysql
 go get github.com/lib/pq
+
+go test -v ->- para rodar testes daquele diretório, -v modo verboso
+go test ./... --> para rodar todos os testes de diretórios abaixo
+
+-- TESTES - convenção, o arquivo de teste termina com _test e o método de teste começa com Test
+go test -cover -- diz a cobertura de testes
+go get github.com/jackc/pgx/v5 -- Baixa o pacote e Atualiza automaticamente o go.mod e o go.sum
